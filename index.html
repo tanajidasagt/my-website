@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=flippcart.html">
-  <title>Redirecting...</title>
+  <meta charset="UTF-8">
+  <title>Welcome - QuickKa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0faff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .option-container {
+      display: flex;
+      gap: 40px;
+    }
+
+    .option-box {
+      background-color: #87cefa;
+      padding: 40px 60px;
+      border-radius: 15px;
+      font-size: 1.5em;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .option-box:hover {
+      background-color: #4682b4;
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecting to Flippcart...</p>
+  <h1>Choose a Category</h1>
+  <div class="option-container">
+    <a href="flippcart.html" class="option-box">Groceries</a>
+    <a href="electronics.html" class="option-box">Electronics</a>
+  </div>
 </body>
 </html>
