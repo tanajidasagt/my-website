@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome - QuickKa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to FlipKart Clone</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0faff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
     }
 
     h1 {
-      font-size: 2em;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
-    .option-container {
+    .options {
       display: flex;
+      justify-content: center;
       gap: 40px;
     }
 
-    .option-box {
-      background-color: #87cefa;
-      padding: 40px 60px;
-      border-radius: 15px;
-      font-size: 1.5em;
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #87ceeb;
       color: white;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
       text-decoration: none;
-      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       transition: 0.3s;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
-    .option-box:hover {
+    .box:hover {
       background-color: #4682b4;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <h1>Choose a Category</h1>
-  <div class="option-container">
-    <a href="flippcart.html" class="option-box">Groceries</a>
-    <a href="electronics.html" class="option-box">Electronics</a>
+  <div class="container">
+    <h1>Choose a Category</h1>
+    <div class="options">
+      <a href="flippcart.html" class="box">Groceries</a>
+      <a href="electronics.html" class="box">Electronics</a>
+    </div>
   </div>
 </body>
 </html>
